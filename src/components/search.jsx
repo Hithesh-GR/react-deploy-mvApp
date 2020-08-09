@@ -97,7 +97,7 @@ export default class SearchMovie extends React.Component {
             if (!this.state.keyword) {
                 alert('Enter Input');
             } else
-                fetch(`http://www.omdbapi.com/?apikey=9b9147&s=${this.state.keyword}`)
+                fetch(`https://www.omdbapi.com/?apikey=9b9147&s=${this.state.keyword}`)
                     .then(response => response.json())
                     .then(this.renderMovies)
         } catch (err) {
